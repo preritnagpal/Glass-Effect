@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glass Effect</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS stylesheet -->
+</head>
+<body>
+    <header>
+        <!-- Logo and navigation -->
+        <a href="#" class="logo">
+            <img src="hero.png" alt="Logo"> <!-- Replace with your actual logo -->
+            <span>Glass Effect</span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a>Home</a></li> <!-- Example navigation links -->
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About us</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <!-- Search inputs and dropdown -->
+        <div class="wrap-input-1">
+            <input class="input" type="text" placeholder="What are you looking for">
+            <span class="focus-border"></span>
+        </div>
+        <p>|</p> <!-- Divider -->
+
+        <div class="wrap-input-1" style="margin-left: 10px; width: 10%;">
+            <input class="input" type="text" placeholder="Location">
+            <span class="focus-border"></span>
+        </div>
+        <p>|</p> <!-- Divider -->
+
+        <select class="custom-select" id="country-select" onchange="document.getElementById('country-input').value = this.value;">
+            <option value="" class="country">All Category</option>
+            <option value="AF">Vegetable</option>
+            <option value="AL">Fruits</option>
+            <option value="DZ">Grocery</option>
+        </select>
+        <button>Search</button> <!-- Search button -->
+    </section>
+
+</body>
+</html>
